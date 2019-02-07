@@ -11,20 +11,7 @@ document.addEventListener("resize", () => {
 
 ctx.fillStyle = "#607D8B";
 
-const velocity = 3;
-
-const velocityX = {
-    'a': -velocity,
-    'd':  velocity
-};
-const velocityY = {
-    'w': -velocity,
-    's':  velocity
-};
-
 const gravity = 0.5;
-const img = new Image();
-img.src = './assets/dudu_duks.png';
 
 class Object {
     constructor (x, y, width, height, dx = 0, dy = 0, skinLeft = undefined, skinRight = undefined) {
